@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+
+@font-face {
+    font-family: 'pixel';
+    src: url('fonte_pixel/04B_30__.TTF') format('truetype');
+}
+
+@font-face {
+    font-family: 'maquina';
+    src: url('font_maquina/Type\ Machine.ttf') format('truetype');
+}
+
+body{
+    background-image: linear-gradient(to right, rgb(0, 119, 255), rgb(0, 201, 191));
+}
+
+h1{
+    color: rgb(0, 0, 0);
+    font-family: 'pixel';
+    font-size: 5em;
+    text-align: center;
+}
+
+nav a {
+    color: rgb(0, 0, 0);
+    padding-left: 21px;
+    font-family: 'pixel';
+    font-size: 1em;
+    text-decoration: none;
+    margin: 10px;
+    
+}
+
+nav >a:hover{
+    background-image:linear-gradient(to right, rgb(0, 119, 255 ), rgb(0, 201, 191));
+}
+

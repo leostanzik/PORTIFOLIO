@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon/robo_azul.png" type="image/x-icon">
+    <title>Portfólio</title>
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        @font-face {
+            font-family: 'pixel';
+            src: url('fonte_pixel/04B_30__.TTF') format('truetype');
+        }
+
+        @font-face {
+            font-family: 'maquina';
+            src: url('font_maquina/Type\ Machine.ttf') format('truetype');
+        }
+
+        * h1
+        {
+            text-align: center;
+
+        }
+        body{
+            background-image: linear-gradient(to right, rgb(0, 119, 255), rgb(0, 201, 191));
+        }
+
+        h1{
+            color: rgb(0, 0, 0);
+            font-family: 'pixel';
+            font-size: 5em;
+        }
+
+
+
+        nav a {
+            color: rgb(0, 0, 0);
+            padding-left: 21px;
+            font-family: 'pixel';
+            font-size: 1em;
+            text-decoration: none;
+            margin: 10px;
+            
+        }
+
+        nav >a:hover{
+            background-image:linear-gradient(to right, rgb(0, 119, 255 ), rgb(0, 201, 191));
+        }
+
+        h2{
+            color: rgb(0, 0, 0);
+            text-align: center;
+            font-family: 'pixel';
+            font-size: 2em;
+        }
+
+        p{
+            color: rgb(0, 0, 0);
+            text-align: justify;
+            text-shadow: 1px 1px 1px rgb(255, 255, 255);
+            font-family: 'maquina';
+            font-size: 1em;
+            font-weight: bold;
+            border-style: solid;
+            border-color: black;
+            border-radius: 20px;
+            padding: 10%;
+            margin: 3%;
+            box-shadow: 3px 3px 3px rgb(0, 0, 0);
+
+        }
+      
+    </style>
+
+
+
+</head>
+<body>
+    
+    <h1>Bem vindo!</h1>
+
+
+         <nav>
+          <a href="index.html" target="_self">Inicio</a> 
+          <a href="sobremim.html" target="_self">Sobre mim</a>
+          <a href="projetos.html" target="_self">Projetos</a>
+          <a href="Habilidades.html" target="_self">Habilidades</a>
+         </nav>
+
+         
+
+           <main>
+            
+                <article>
+                    <h2>Resumo</h2>
+
+                    <p id="mudar" onclick="clicou()" onmouseenter="entrar()" onmouseout="sair()">Meu nome é Leonardo Lessa Stanzik, gosto muito da Área de tecnologia,
+                     minha jornada e um pouco tortuosa, começando minha carreira
+                     trabalhista como técnico de enfermagem no ano de 2020 quando se
+                     instaurou a COVID-19 venho trabalhando em hospital de la para ca.
+                     Devido as muitas voltas que o mundo dá, na busca de melhores condições
+                     e qualidade de vida resolvi começar a estudar para ser programador,
+                     sempre fui muito fã de jogos e de usar a internet,
+                     me identifico bastante com a profissão e
+                     pretendo me especializar para ser o MELHOR!</p>
+                </article>
+           </main>
+
+
+           <script>
+            var mudar = window.document.getElementById('mudar')
+
+            var nome = window.prompt('Bem vindo, Qual é o seu nome?')
+            window.alert('Muito prazer ' + nome +  ', espero que goste!')
+
+            function entrar() {
+                mudar.style.background=' rgb(0, 119, 255 )'               
+            }
+
+            function sair() {
+                mudar.style.background= ' rgb(0, 201, 191)'
+            }
+
+            function clicou() {
+                mudar.style.background='rgb(247, 84, 84)'
+            }
+            
+            </script>
+         
+</body>
+</html>
